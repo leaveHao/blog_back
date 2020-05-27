@@ -1,0 +1,227 @@
+body {
+  // background-image:url(../images/bg_img.jpg);
+  // height:100%;
+  // width:100%;
+  // background-repeat:repeat-x;
+  // background-attachment:fixed;
+  // background-size:cover;
+}
+
+.site-subtitle{
+	color: #FFF;
+}
+
+// 隐藏 valine 的 powered by
+.power.txt-right {
+	display: none;
+}
+
+// 修改不蒜子数据颜色
+#busuanzi_value_site_pv,#busuanzi_value_site_uv{
+  color: #999999;
+}
+
+// valine 评论框对齐文章
+div#comments.comments.v{
+  margin-left: 0px ;
+  margin-right: 0px ;
+  border: 0px;
+}
+
+// Valine 隐藏系统信息
+.vsys{
+  display:none !important;
+}
+
+// 颜色块-黄
+span#inline-yellow {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #f0ad4e;
+}
+// 颜色块-绿
+span#inline-green {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #5cb85c;
+}
+// 颜色块-蓝
+span#inline-blue {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #2780e3;
+}
+// 颜色块-紫
+span#inline-purple {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #caacd9;
+}
+
+// 颜色块-橙
+span#inline-geraldine {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #f78a7a;
+}
+// 颜色块-红
+span#inline-roman {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #de5c6b;
+}
+
+a#download {
+display: inline-block;
+padding: 0 10px;
+color: #000;
+background: transparent;
+border: 2px solid #000;
+border-radius: 2px;
+transition: all .5s ease;
+font-weight: bold;
+&:hover {
+background: #000;
+color: #fff;
+}
+}
+
+//渐变色背景
+.site-brand-container, .menu-item-active a {
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%, #ddd6f3 0%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+//key帧
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.menu .menu-item a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right,#fdcbf1 0,#fdcbf1 1%,#e6dee9 100%);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+.menu .menu-item a:hover:before {
+    transform: scale(1);
+}
+
+.menu .menu-item a:hover, .menu .menu-item span.exturl:hover{
+    z-index: 1;
+    background: transparent;
+}
+
+//侧边框的透明度设置
+.sidebar-inner {
+  background: rgba(255,255,255,0.95);
+}
+
+//菜单栏的透明度设置
+.header-inner {
+  background: rgba(255,255,255,0.95);
+	z-index: 999;
+}
+
+// 内容区透明度
+.main-inner{
+	margin-top: 15px
+	opacity: 0.95;
+}
+
+//解决布局圆角阴影问题
+.sidebar {
+box-shadow: none
+background: none
+}
+
+//去掉顶部默认横线
+.headband{
+	height: 0;
+	width: 0;
+	border:none;
+	padding: 0;
+	margin: 0;
+}
+
+// 头像旋转特效
+// if (hexo-config('avatar.rotated')) {
+//   .site-author-image {
+//     transition: transform 1s ease-out;
+//     animation: rotate 5s linear infinite;
+//   }
+
+//   @keyframes rotate{from{transform: rotate(0deg)}
+//   to{transform: rotate(360deg)}
+//   }
+
+//   .site-author-image:hover {
+//     // transform: rotateZ(360deg);
+//   }
+// }
