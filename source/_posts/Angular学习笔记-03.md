@@ -3,6 +3,12 @@ title: Angular学习笔记-03
 description: Angular声明属性、动态绑定数据、动态绑定属性、动态绑定类、数据双向绑定
 abbrlink: 697644c6
 date: 2020-06-09 17:30:48
+cover: /images/angularjs_cover.jpg
+tags:
+	- 前端
+	- AngularJS
+categories: AngularJS
+top_img: /images/default_cover.jpg
 ---
 
 ### 声明属性的几种方式
@@ -73,10 +79,11 @@ public content:string = '<h2>这是一个h2标签,使用[innerHTML]来解析</h2
 <span [innerHTML]="content"></span>
 ```
 
-### 动态绑定类 ngClass
+### 动态绑定类/样式 ngClass ngStyle
 
 ```
 public flag:boolean = true;
+public bgColor:string = 'red'
 ```
 
 ```
@@ -91,6 +98,7 @@ public flag:boolean = true;
 
 ```
 <div [ngClass]="{'blue': flag ,'pink':!flag}">动态绑定类</div>
+<div [ngStyle]="{backgroundColor: bgColor}">动态绑定样式</div>
 ```
 
 ### 数据双向绑定

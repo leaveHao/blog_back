@@ -3,8 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 很高兴遇见你😀
-subtitle: 'LeaveHao'
+# title: 很高兴遇见你😀
+title: LeaveH
+subtitle: '很高兴遇见你😀'
 description: ''
 keywords:
 author: LeaveHao
@@ -96,7 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+## theme: next
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

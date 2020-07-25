@@ -3,6 +3,12 @@ title: Angular学习笔记-02
 abbrlink: '1e717450'
 date: 2020-06-09 11:03:41
 description: Angular创建组件
+cover: /images/angularjs_cover.jpg
+tags:
+	- 前端
+	- AngularJS
+categories: AngularJS
+top_img: /images/default_cover.jpg
 ---
 
 ### 查看可创建的控件

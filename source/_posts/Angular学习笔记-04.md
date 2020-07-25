@@ -3,6 +3,12 @@ title: Angular学习笔记-04
 abbrlink: f712d165
 date: 2020-06-10 09:49:18
 description: Angular数据循环、条件判断
+cover: /images/angularjs_cover.jpg
+tags:
+	- 前端
+	- AngularJS
+categories: AngularJS
+top_img: /images/default_cover.jpg
 ---
 
 ### 普通循环 *ngFor
@@ -14,7 +20,7 @@ public arr:Array<any> = ['北京','上海','深圳'];
 ```
 
 ```
-<p *ngFor="let item of arr, let i = index">{{item}}{{i}}</p>
+<p *ngFor="let item of arr; let i = index">{{item}}{{i}}</p>
 或者
 <p *ngFor="let item of arr index as i">{{item}}{{i}}</p>
 ```
@@ -29,8 +35,10 @@ public flag:boolean = true;
 
 ```
 <div>
-  <img *ngIf="flag" src="assets/image/home_active.svg">
-  <img *ngIf="!flag" src="assets/image/home.svg">
+  <img *ngIf="flag;else notActive" src="assets/image/home_active.svg">
+  <ng-template #notActive>
+    <img src="assets/image/home.svg">
+  </ng-template>
 </div>
 ```
 
