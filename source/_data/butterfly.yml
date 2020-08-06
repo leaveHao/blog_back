@@ -20,11 +20,11 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: pale night # default / darker / pale night / light / ocean / mac / false
+highlight_theme: mac # default / darker / pale night / light / ocean / mac / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
-highlight_shrink: none # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-code_word_wrap: false
+highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+code_word_wrap: true
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
@@ -96,7 +96,8 @@ avatar:
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+# default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: /images/top-img.jpg
 
 # the banner image of archive page
 archive_img:
@@ -519,7 +520,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
@@ -579,7 +580,7 @@ aside:
     enable: true
     description:
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
@@ -673,8 +674,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
-  icons: true
+  style: simple
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
