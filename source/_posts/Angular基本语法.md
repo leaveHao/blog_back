@@ -2,7 +2,7 @@
 title: AngularJS基本语法
 abbrlink: 16107
 date: 2020-06-09 9:03:41
-description: Angular环境搭建、创建项目、运行项目、基本语法
+description: Angular环境搭建、创建项目、运行项目、基本语法。
 cover: /images/angularjs_cover.jpg
 tags:
 	- 前端
